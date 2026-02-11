@@ -137,26 +137,26 @@ export const COLORS_PER_ROW = 5;
 
 export const DEFAULT_CHART_COLOR_INDEX = 4;
 
-export const DEFAULT_ELEMENT_STROKE_COLOR_INDEX = 4;
+export const DEFAULT_ELEMENT_STROKE_COLOR_INDEX = 2;
 export const DEFAULT_ELEMENT_BACKGROUND_COLOR_INDEX = 1;
 
 export const COLOR_PALETTE = {
   transparent: "transparent",
   black: "#1e1e1e",
   white: "#ffffff",
-  // open-color from https://github.com/yeun/open-color/blob/master/open-color.js
-  // corresponds to indexes [0,2,4,6,8] (weights: 50, 200, 400, 600, 800)
-  gray: ["#f8f9fa", "#e9ecef", "#ced4da", "#868e96", "#343a40"],
-  red: ["#fff5f5", "#ffc9c9", "#ff8787", "#fa5252", "#e03131"],
-  pink: ["#fff0f6", "#fcc2d7", "#f783ac", "#e64980", "#c2255c"],
+  // Tailwind CSS colors with 500 weight as primary (index 2)
+  // corresponds to indexes [0,1,2,3,4] (weights: 100, 300, 500, 700, 900)
+  gray: ["#f3f4f6", "#d1d5db", "#6b7280", "#374151", "#111827"],
+  red: ["#ffe4e6", "#fda4af", "#f43f5e", "#be123c", "#881337"], // rose
+  pink: ["#fce7f3", "#f9a8d4", "#ec4899", "#be185d", "#831843"],
   grape: ["#f8f0fc", "#eebefa", "#da77f2", "#be4bdb", "#9c36b5"],
-  violet: ["#f3f0ff", "#d0bfff", "#9775fa", "#7950f2", "#6741d9"],
-  blue: ["#e7f5ff", "#a5d8ff", "#4dabf7", "#228be6", "#1971c2"],
-  cyan: ["#e3fafc", "#99e9f2", "#3bc9db", "#15aabf", "#0c8599"],
-  teal: ["#e6fcf5", "#96f2d7", "#38d9a9", "#12b886", "#099268"],
-  green: ["#ebfbee", "#b2f2bb", "#69db7c", "#40c057", "#2f9e44"],
-  yellow: ["#fff9db", "#ffec99", "#ffd43b", "#fab005", "#f08c00"],
-  orange: ["#fff4e6", "#ffd8a8", "#ffa94d", "#fd7e14", "#e8590c"],
+  violet: ["#f3e8ff", "#d8b4fe", "#a855f7", "#7e22ce", "#581c87"], // purple
+  blue: ["#e0f2fe", "#7dd3fc", "#0ea5e9", "#0369a1", "#0c4a6e"], // sky
+  cyan: ["#cffafe", "#67e8f9", "#06b6d4", "#0e7490", "#164e63"],
+  teal: ["#ccfbf1", "#5eead4", "#14b8a6", "#0f766e", "#134e4a"],
+  green: ["#d1fae5", "#6ee7b7", "#10b981", "#047857", "#064e3b"], // emerald
+  yellow: ["#fef3c7", "#fcd34d", "#f59e0b", "#b45309", "#78350f"], // amber
+  orange: ["#ffedd5", "#fdba74", "#f97316", "#c2410c", "#7c2d12"],
   // radix bronze shades [3,5,7,9,11]
   bronze: ["#f8f1ee", "#eaddd7", "#d2bab0", "#a18072", "#846358"],
 } as const;

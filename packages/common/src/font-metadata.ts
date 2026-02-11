@@ -111,6 +111,30 @@ export const FONT_METADATA: Record<number, FontMetadata> = {
     },
     private: true,
   },
+  [FONT_FAMILY["Mona Sans"]]: {
+    metrics: {
+      unitsPerEm: 1000,
+      ascender: 1036,
+      descender: -335,
+      lineHeight: 1.25,
+    },
+  },
+  [FONT_FAMILY["Hubot Sans"]]: {
+    metrics: {
+      unitsPerEm: 1000,
+      ascender: 1020,
+      descender: -300,
+      lineHeight: 1.25,
+    },
+  },
+  [FONT_FAMILY["JetBrains Mono"]]: {
+    metrics: {
+      unitsPerEm: 2048,
+      ascender: 1900,
+      descender: -480,
+      lineHeight: 1.2,
+    },
+  },
   [FONT_FAMILY_FALLBACKS.Xiaolai]: {
     metrics: {
       unitsPerEm: 1000,
